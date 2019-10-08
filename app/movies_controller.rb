@@ -29,6 +29,7 @@ def can_be_created_in_a_block
   # release_date == 1990
 
   Movie.create(title: "Home Alone", release_date: 1990) do |m|
+    binding.pry
     m.title
     m.release_date
   end
