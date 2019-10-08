@@ -30,7 +30,7 @@ def can_be_created_in_a_block(args = nil)
 
   Movie.create do |m|
     m.title = "#{:title}"
-    m.release_date =
+    m.release_date = "#{:release_date}"
   end
 end
 
